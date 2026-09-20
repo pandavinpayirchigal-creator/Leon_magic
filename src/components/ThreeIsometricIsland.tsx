@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { RotateCw, Sun, Moon, Grid, Sparkles } from 'lucide-react';
 import { playSound } from '../utils/audio';
+import { LEON_PROFILE_FALLBACK } from '../data/projects';
 
 interface ThreeIsometricIslandProps {
   className?: string;
@@ -309,7 +310,7 @@ export const ThreeIsometricIsland: React.FC<ThreeIsometricIslandProps> = ({
             <img
               src={portraitUrl}
               onError={(e) => {
-                e.currentTarget.src = '/src/assets/images/new_portrait.png';
+                e.currentTarget.src = LEON_PROFILE_FALLBACK;
               }}
               alt="Leon Developer"
               referrerPolicy="no-referrer"

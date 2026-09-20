@@ -1,7 +1,18 @@
 import { GameProject, SkillNode, CodeSnippet } from '../types';
 
+// Bundled permanent asset imports for reliable builds on GitHub, GitHub Pages, and production
+import gtaCoverImg from '../assets/images/gta_tamil_nadu_cover_1789883932021.jpg';
+import ghilliImg from '../assets/images/ghilli_game_screen_1789884255561.jpg';
+import kadinamaaImg from '../assets/images/kadinamaa_iru_game_1789884274442.jpg';
+import upcomingImg from '../assets/images/upcoming_projects_1789881397690.jpg';
+import thalapathyImg from '../assets/images/thalapathy_the_game_1789884489796.jpg';
+import muthu2dImg from '../assets/images/muthu_2d_game_1789884456852.jpg';
+import checkpointImg from '../assets/images/checkpoint_impossible_1789883534222.jpg';
+import goofygenImg from '../assets/images/goofygen_hat_game_1789884474296.jpg';
+import leonProfileFallbackImg from '../assets/images/new_portrait.png';
+
 export const LEON_PROFILE_IMAGE = "https://res.cloudinary.com/dwmgvszle/image/upload/v1789882695/IMG_20260920_110717_bcpgvt.png";
-export const LEON_PROFILE_FALLBACK = "/src/assets/images/new_portrait.png";
+export const LEON_PROFILE_FALLBACK = leonProfileFallbackImg;
 
 export const GAME_PROJECTS: GameProject[] = [
   {
@@ -11,7 +22,7 @@ export const GAME_PROJECTS: GameProject[] = [
     category: 'Open World RPG',
     description: 'High-speed auto-rickshaw chases through neon-drenched streets across Tamil Nadu with traditional temple architecture.',
     longDescription: 'An ambitious open-world crime thriller set in a retro-futuristic Tamil Nadu. Navigate bustling tea stalls, majestic illuminated temple gopurams, coastal highways, and high-tech corporate zones. Featuring authentic Tamil voice lines, local driving physics, and custom mission storylines.',
-    image: '/src/assets/images/gta_tamil_nadu_cover_1789883932021.jpg',
+    image: gtaCoverImg,
     tags: ['Open World', 'Action RPG', 'Godot 4', 'PC / Mobile'],
     engine: 'Godot Engine 4.2',
     platform: 'PC & Mobile',
@@ -36,7 +47,7 @@ export const GAME_PROJECTS: GameProject[] = [
     category: 'Action Thriller',
     description: 'Official action game adaptation. Relive high-voltage car getaways, thrilling rescues, intense kabaddi matches, and cinema showdowns.',
     longDescription: 'Based on the beloved mass blockbuster, Ghilli – The Game puts players in the driving seat of intense getaways and heart-stopping rescue missions. Navigate escape routes from Madurai to Chennai, protect Dhanalakshmi, overcome villain Muthupandi\'s henchmen, and unleash signature action hero combos with authentic cinema audio.',
-    image: '/src/assets/images/ghilli_game_screen_1789884255561.jpg',
+    image: ghilliImg,
     tags: ['Movie Adaptation', 'Action Thriller', 'Ghilli', 'Kollywood', 'Story Rich'],
     engine: 'Unity / C#',
     platform: 'PC & Consoles',
@@ -61,7 +72,7 @@ export const GAME_PROJECTS: GameProject[] = [
     category: '2D Platformer / Calisthenics',
     description: 'Run, jump, slide, and collect biscuits! High-octane 2D calisthenics action game inspired by the Kadinamaa Iru fitness movement.',
     longDescription: 'Inspired by the Kadinamaa Iru calisthenics mindset: push your limits, stay hard, and never give up! Play as the straw-hat athletic hero, dodging treacherous spike traps, leaping across brick platforms, sliding under obstacles, and gathering biscuits to fuel your calisthenics power and beat your high scores.',
-    image: '/src/assets/images/kadinamaa_iru_game_1789884274442.jpg',
+    image: kadinamaaImg,
     tags: ['Playable', '2D Adventure', 'Calisthenics', 'Runner', 'Kadinamaa Iru', 'Leon_gx'],
     engine: 'Godot 4.3 / 2D Engine',
     platform: 'Android, Windows & Web',
@@ -87,7 +98,7 @@ export const GAME_PROJECTS: GameProject[] = [
     category: 'Sci-Fi Fantasy',
     description: 'Classified next-generation exploration into glowing dimensional portals, floating crystal realms, and ancient mysteries.',
     longDescription: 'An unannounced procedural sci-fi action adventure taking players through cosmic voids and glowing gateways. Solve ancient celestial puzzles, manipulate gravity fields, and harness quantum artifacts in deep space.',
-    image: '/src/assets/images/upcoming_projects_1789881397690.jpg',
+    image: upcomingImg,
     tags: ['In Development', 'Procedural', 'Next-Gen', 'Mystery'],
     engine: 'Unreal Engine 5 / C++',
     platform: 'PC / PS5 / Xbox',
@@ -112,7 +123,7 @@ export const GAME_PROJECTS: GameProject[] = [
     category: 'Action Brawler',
     description: 'Play online in your browser! Naripaddi power cut showdown. Play Story Mode or Wave Mode with punch, kick, and blaster combos.',
     longDescription: 'Naripaddi current kambam la fuse carrier moiyam ah thookitanga. Whole area power cut. Oru aalu mattum than ipo current\'ah thirumba kondu varuvaru! Step up as the hero to bring the power back. Features authentic Tamil mass action, Story Mode, Wave Mode, and mobile-friendly on-screen punch, kick, and blast controls.',
-    image: '/src/assets/images/thalapathy_the_game_1789884489796.jpg',
+    image: thalapathyImg,
     tags: ['Play Online', 'Thalapathy', 'Mass Action', 'Story & Wave Mode', 'Leon_gx'],
     engine: 'HTML5 / Web Canvas',
     platform: 'Web Browser (PC & Mobile)',
@@ -138,7 +149,7 @@ export const GAME_PROJECTS: GameProject[] = [
     category: '2D Platformer',
     description: '100% free web-playable 2D arcade platformer with UFO encounters, stone wall ruins, mountain vistas, and responsive jump controls.',
     longDescription: 'Created by Muthu. A vibrant side-scrolling 2D platformer engineered directly for mobile and desktop web browsers. Leap across lush grassy stone plateaus, navigate tricky obstacles, dodge alien UFOs, and climb the high-score counter.',
-    image: '/src/assets/images/muthu_2d_game_1789884456852.jpg',
+    image: muthu2dImg,
     tags: ['Free to Play', '2D Platformer', 'Created by Muthu', 'Mobile Friendly', 'Arcade'],
     engine: 'JavaScript / HTML5 2D',
     platform: 'Mobile & Web Browser',
@@ -164,7 +175,7 @@ export const GAME_PROJECTS: GameProject[] = [
     category: 'Precision Platformer',
     description: 'Test your reflexes and patience in this notoriously unforgiving challenge game with relentless obstacles and instant respawns.',
     longDescription: 'Only the most determined players will survive. Checkpoint Impossible pushes precision platforming to its absolute limits with razor-sharp spike timings, deceptive trap triggers, and ruthless checkpoints. Download the build directly via Google Drive.',
-    image: '/src/assets/images/checkpoint_impossible_1789883534222.jpg',
+    image: checkpointImg,
     tags: ['Rage Game', 'Precision', 'Hardcore', 'Direct Download'],
     engine: 'Godot / Unity Engine',
     platform: 'Android APK & PC',
@@ -190,7 +201,7 @@ export const GAME_PROJECTS: GameProject[] = [
     category: 'Arcade / Versus',
     description: 'Only one can win. The lucky hat decides everything! Retro neon synthwave arcade battle with Story Mode and Endless Mode.',
     longDescription: 'Goofygen (Kutty PR) vs Asro (Dubai Mama). Only one can win — the lucky hat decides everything! Dive into this electrifying retro pixel synthwave arcade game featuring Story Mode, Endless Mode, neon CRT visuals, and hilarious hat duels.',
-    image: '/src/assets/images/goofygen_hat_game_1789884474296.jpg',
+    image: goofygenImg,
     tags: ['Play Online', 'Goofygen Hat', 'Kutty PR', 'Dubai Mama', 'Retro Arcade', 'Pixel Art'],
     engine: 'HTML5 Web Arcade',
     platform: 'Web Browser & Mobile',

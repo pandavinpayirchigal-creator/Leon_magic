@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Terminal, Monitor, Sparkles, Play, Headphones, Keyboard, Mouse, MapPin, Layers, Code2, Sliders } from 'lucide-react';
 import { PixelDino } from './PixelDino';
 import { playSound } from '../utils/audio';
+import battlestationImg from '../assets/images/developer_lab_battlestation_1789882948715.jpg';
 
 export const DeveloperLabSection: React.FC = () => {
   const [activeMonitor, setActiveMonitor] = useState<'left' | 'center' | 'right'>('center');
@@ -60,7 +61,7 @@ export const DeveloperLabSection: React.FC = () => {
           {/* Battlestation Setup Showcase Image */}
           <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-950 group">
             <img
-              src="/src/assets/images/developer_lab_battlestation_1789882948715.jpg"
+              src={battlestationImg}
               alt="Leon Developer Battlestation - Triple Display Setup with Curved Code IDE and 3D Engine"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover select-none transition-transform duration-700 group-hover:scale-[1.01]"
