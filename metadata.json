@@ -1,0 +1,6 @@
+{
+  "name": "Leon Magic Studio",
+  "description": "Official website and portfolio for Leon Magic Studio - Solo Indie Game Developer crafting GTA Tamil Nadu, Ghilli – The Game, Kadinamaa Iru 2D Calisthenics Game, and immersive worlds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
